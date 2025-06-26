@@ -1,0 +1,47 @@
+# Compilados Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Diretórios de build
+/target/
+/bin/
+/build/
+
+# Arquivos de log
+*.log
+
+# Configurações do VS Code
+.vscode/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Dependências baixadas pelo Maven
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Dependências baixadas pelo Gradle
+.gradle/
+build/
+
+# Arquivos temporários
+*.tmp
+*.swp
+
+# Arquivos de configuração do IDE
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Arquivos de upload do Spring
+uploads/
+
+# Arquivos de ambiente
+.env
+
+# Arquivos de teste
+/test-output/
