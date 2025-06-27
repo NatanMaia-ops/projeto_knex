@@ -67,7 +67,6 @@ public class DeputadoService {
                     continue;
                 }
 
-                // Deputado
                 Deputado deputado = deputadoRepo.findByCpf(cpf)
                         .orElseGet(() -> {
                             Deputado novo = new Deputado();
@@ -79,14 +78,13 @@ public class DeputadoService {
                             return deputadoRepo.save(novo);
                         });
 
-                // Despesa
                 Despesa despesa = new Despesa();
                 despesa.setDeputado(deputado);
                 despesa.setUrl(url);
                 despesa.setFornecedor(fornecedor);
                 despesa.setValorLiquido(valorLiquido);
 
-                // Conversão de data
+
                 if (!dataStr.isEmpty() && !dataStr.equalsIgnoreCase("text")) {
                     try {
                         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
